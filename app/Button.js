@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { View, Text, StyleSheet, TouchableHighlight } from 'react-native'
 
@@ -9,7 +8,7 @@ const Button = ({ submitTodo }) => (
             style={styles.button}
             onPress={submitTodo}> 
             <Text style={styles.submit}>
-                Submit
+               ADD
             </Text>
         </TouchableHighlight>
     </View>
@@ -23,17 +22,21 @@ const styles = StyleSheet.create({
         height: 50,
         paddingLeft: 20,
         paddingRight: 20,
-        backgroundColor: '#ffffff',
+        backgroundColor: '#f3ebff',
         width: 200,
         marginRight: 20,
-        marginTop: 15,
-        borderWidth: 1,
+        marginTop: 30,
+        borderWidth: 2,
         borderColor: 'rgba(0,0,0,.1)',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        shadowOpacity: 0.2,
+		shadowRadius: 3,
+		shadowColor: '#000000',
+		shadowOffset: { width: 2, height: 2 }
     },
     submit: {
-        color: '#666666',
+        color: '#2b1251',
         fontWeight: '600'
     }
 })

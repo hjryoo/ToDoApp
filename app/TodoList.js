@@ -15,8 +15,7 @@ const TodoList = ({ todos, deleteTodo, toggleComplete, type }) => {
 		}
 	}
 	todos = getVisibleTodos(todos, type)
-
-	todos = todos && todos.map((todo, i) => {
+	todos = todos.map((todo, i) => {
 		return (
 			<Todo
 				deleteTodo={deleteTodo}
